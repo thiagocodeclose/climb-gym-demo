@@ -4,6 +4,7 @@ import { Oswald, Source_Sans_3 } from 'next/font/google';
 import './globals.css';
 import { getKorivaConfig, buildCssVars } from '@/lib/koriva-config';
 
+import { KorivaLivePreview } from '@/components/KorivaLivePreview';
 const oswald = Oswald({ subsets: ['latin'], weight: ['400', '500', '600', '700'], variable: '--font-oswald' });
 const sourceSans = Source_Sans_3({ subsets: ['latin'], weight: ['300', '400', '600'], variable: '--font-source' });
 
@@ -17,7 +18,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const vars = buildCssVars(cfg?.brand);
   return (
     <html lang="en" style={vars as React.CSSProperties}>
-      <body className={`${oswald.variable} ${sourceSans.variable}`}>{children}</body>
+      <body className={`${oswald.variable} ${sourceSans.variable}`}>{children}<KorivaLivePreview /></body>
     </html>
   );
 }

@@ -179,7 +179,7 @@ export default function ClimbPage() {
         <div className="cl-hero-overlay" />
         <div className="cl-hero-content">
           <p className="cl-hero-eyebrow">{d.gym.location} · Indoor Climbing</p>
-          <h1 className="cl-hero-title">FIND<br />YOUR<br /><span>NEXT MOVE.</span></h1>
+          <h1 data-cg-el="hero_headline_1" className="cl-hero-title">FIND<br />YOUR<br /><span>NEXT MOVE.</span></h1>
           <p className="cl-hero-sub">{d.gym.name} is Denver's most comprehensive climbing gym — 18,000 sq ft of walls, routes for every grade, and a community that's serious about sending.</p>
           <div className="cl-hero-actions">
             <button className="cl-btn-primary">Start Climbing</button>
